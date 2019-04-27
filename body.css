@@ -10,7 +10,8 @@ body {
   margin-right: auto;
   text-align: center;
   margin-top: 40px;
-  font-size : 20px;
+  font-size: 20px;
+  font-family: cursive;
 }
 thead{
   width: 350px;
@@ -23,20 +24,19 @@ thead th{
   color: white;
   border-radius : 5px 5px 0 0;
 }
-tbody tr th{
-  border-style:dotted;
-  color:white;
-  background :#FAE5E9;
-
+tbody tr th {
+  border-style: dotted;
+  color: white;
+  background: #fae5e9;
 }
-tbody td{
-  border: 1px solid #F796B0;
-  border-radius : 5px 5px 0 0;
+tbody td {
+  border: 1px solid #fae5e9;
+  border-radius: 5px 5px 0 0;
   width: 350px;
-  padding-top:30px;
-  padding-bottom:30px;
-  padding-left:35px;
-  padding-right:35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
   vertical-align: top;
 }
 
