@@ -31,7 +31,7 @@ window.onload = function() {
     // console.log(localStorage.getItem("allEntries"));
     var existingEntries = localStorage.getItem("allEntries");
 
-    if (existingEntries == "") existingEntries = [];
+    if (existingEntries == null) existingEntries = [];
     else existingEntries = JSON.parse(existingEntries);
 
     var entry = {
