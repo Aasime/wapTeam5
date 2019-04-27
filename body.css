@@ -1,4 +1,14 @@
 body {
-  width: 300px;
+  width: 400px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#timeTable {
+  background-image: url("./background-fire1.jpg");
+  width: 200px;
   height: 300px;
 }
