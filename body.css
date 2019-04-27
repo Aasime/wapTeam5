@@ -11,6 +11,7 @@ body {
   margin-right: auto;
   text-align: center;
   margin-top: 40px;
+<<<<<<< HEAD
   font-size : 20px;
   font-family : cursive;
 }
@@ -30,6 +31,8 @@ tbody tr th{
   color:white;
   background :#FAE5E9;
 
+=======
+>>>>>>> 90fe6ba23ee610646b8d4b7caadb36964672f176
 }
 tbody td{
   border: 1px solid #FAE5E9;
@@ -53,6 +56,7 @@ tbody td{
 
 #setClassContentBox {
   display: flex;
+  height: 200px;
   justify-content: center;
   align-items: center;
   margin-left: 50px;
@@ -61,4 +65,8 @@ tbody td{
   top: 250px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.4);
   z-index: 1000;
+}
+
+#setClassContent {
+  height: 100%;
 }
