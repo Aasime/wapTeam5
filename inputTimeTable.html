@@ -1,32 +1,76 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script>
-      function register(){
-
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-color: grey;
       }
-    </script>
+      table {
+        color: white;
+        font-style: italic;
+        font-size: 15px;
+      }
+      table input {
+        height: 15px;
+      }
+      table input :last-child {
+        width: 100px;
+      }
+    </style>
   </head>
   <body>
+    <image
+      id="exitButton"
+      src="./cross.png"
+      style="width:24px; height:24px;"
+    ></image>
     <table>
       <tr>
-        <td> <label> 과목 : </label> </td>
-        <td colspan="3"><input type="text" name="subject" id="subject" required></td>
+        <td><label> 과목 : </label></td>
+        <td colspan="3">
+          <input type="text" name="subject" id="subject" required />
+        </td>
       </tr>
       <tr>
-        <td> <label> 교수님 : </label> </td>
-        <td colspan="3"><input type="text" name="professor" id="professor" required"></td>
+        <td><label> 교수님 : </label></td>
+        <td colspan="3">
+          <input type="text" name="professor" id="professor" required">
+        </td>
       </tr>
       <tr>
         <td><label> 시간 : </label></td>
-        <td><input type="time" name="time1" id="time1" min="9:00" max="18:00" required></td>
-        <td> to </td>
-        <td><input type="time" name="time2" id="time2" min="9:00" max="18:00" required></td>
+        <td>
+          <input
+            type="time"
+            name="time1"
+            id="time1"
+            min="9:00"
+            max="18:00"
+            required
+          />
+        </td>
+        <td>to</td>
+        <td>
+          <input
+            type="time"
+            name="time2"
+            id="time2"
+            min="9:00"
+            max="18:00"
+            required
+          />
+        </td>
       </tr>
       <tr>
-        <td colspan="3"><input type="button" id="button" value="등록" onclick="location.href=./main.html"></td>
+        <td colspan="3">
+          <input
+            type="button"
+            id="button"
+            value="등록"
+            onclick="location.href=./main.html"
+          />
+        </td>
       </tr>
     </table>
   </body>

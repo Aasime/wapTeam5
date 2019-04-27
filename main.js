@@ -1,9 +1,19 @@
 window.onload = function() {
+  var setClassContentBox = document.getElementById("setClassContentBox");
+  var exitButton = document.setClassContent;
+  console.log(exitButton);
+  exitSetClassPage();
+
   function getSetClassPage() {
-    console.log("click");
-    var setClassContent = document.getElementById("setClassContent");
-    setClassContent.src = "./inputTimeTable.html";
+    if (setClassContentBox.style.display == "none")
+      setClassContentBox.style.display = "block";
+    else exitSetClassPage();
   }
 
-  document.getElementById("addClass").onclick = getSetClassPage;
+  function exitSetClassPage() {
+    setClassContentBox.style.display = "none";
+  }
+
+  document.getElementById("addClassButton").onclick = getSetClassPage;
+  exitButton.document.getElementById("exitButton").onclick = exitSetClassPage;
 };
