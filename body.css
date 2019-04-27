@@ -11,35 +11,31 @@ body {
   margin-right: auto;
   text-align: center;
   margin-top: 40px;
-<<<<<<< HEAD
-  font-size : 20px;
-  font-family : cursive;
+  font-size: 20px;
+  font-family: cursive;
 }
-thead{
+thead {
   width: 350px;
   padding: 10px;
   vertical-align: top;
-  background : pink;
-
+  background: pink;
 }
-thead th{
+thead th {
   color: white;
-  border-radius : 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
 }
-tbody tr th{
- border-style:dotted;
-  color:white;
-  background :#FAE5E9;
-
-=======
->>>>>>> 90fe6ba23ee610646b8d4b7caadb36964672f176
+tbody tr th {
+  border-style: dotted;
+  color: white;
+  background: #fae5e9;
 }
-tbody td{
-  border: 1px solid #FAE5E9;
-  border-radius : 5px 5px 0 0;
+tbody td {
+  border: 1px solid #fae5e9;
+  border-radius: 5px 5px 0 0;
   width: 350px;
   padding: 10px;
   vertical-align: top;
+  background-color: white;
 }
 
 #header {
@@ -56,6 +52,7 @@ tbody td{
 
 #setClassContentBox {
   display: flex;
+  width: 300px;
   height: 200px;
   justify-content: center;
   align-items: center;

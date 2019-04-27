@@ -38,8 +38,8 @@ window.onload = function() {
       subject: getValueById("subject"),
       professor: getValueById("professor"),
       dayOfWeek: getValueById("dayOfWeek"),
-      time1: getValueById("time1"),
-      time2: getValueById("time2")
+      time1: getValueById("startTime"),
+      time2: getValueById("endTime")
     };
 
     existingEntries.push(entry);
