@@ -29,9 +29,22 @@ function getLocalSotrageData(key){
   return localStorage.getItem(key);
 }*/
 window.onload = function(){
+  var setClassContentBox = document.getElementById("setClassContentBox");
+  var exitButton = document.setClassContent;
+
   function getValueById(id){
     return document.getElementById(id).value;
-  };
+  }
+
+  function exitSetClassPage() {
+    setOpacity("header", 1);
+    setOpacity("timeTable", 1);
+    setClassContentBox.style.display = "none";
+  }
+
+  window._fn = function(){
+    location.href="./main.html";
+  }
 
   function addEntry() {
       // Parse any JSON previously stored in allEntries
@@ -41,15 +54,20 @@ window.onload = function(){
           "subject": getValueById("subject"),
           "professor": getValueById("professor"),
           "dayOfWeek": getValueById("dayOfWeek"),
-          "time1":getValueById("time1"),
-          "time2":getValueById("time2")
+          "time1": getValueById("time1"),
+          "time2": getValueById("time2")
       };
       localStorage.setItem("entry", JSON.stringify(entry));
       // Save allEntries back to local storage
       existingEntries.push(entry);
       localStorage.setItem("allEntries", JSON.stringify(existingEntries));
-      location.href="./main.html";
-  };
-  
-  document.getElementById("button").onclick = addEntry;
+  }
+
+  function exitPage(){
+    exitButton.document.getElementById("exitButton").onclick = exitSetClassPage;
+  }
+
+  document.getElementById("button").onclick = addEntry();
+
+
 }
