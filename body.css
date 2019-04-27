@@ -1,7 +1,7 @@
 body {
   width: 400px;
   height: 800px;
-  background-color: grey;
+  background-color: white;
 }
 
 #timeTable {
@@ -15,6 +15,7 @@ body {
   margin-right: auto;
   text-align: center;
   margin-top: 40px;
+
 }
 th,
 td {
