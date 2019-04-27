@@ -5,10 +5,12 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  background-color: rgb(21, 22, 25);
 }
 
 #timeTable {
-  background-image: url("./background-fire1.jpg");
+  /* background-image: url("./background-fire1.jpg"); */
+
   width: 200px;
   height: 300px;
 }

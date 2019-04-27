@@ -7,6 +7,5 @@
     "default_popup": "main.html",
     "default_title": "Open the popup"
   },
-  "permissions": [],
-  "content_security_policy": "script-src 'self' 'sha256-5As4+3YpY62...'; object-src 'self'"
+  "permissions": []
 }
