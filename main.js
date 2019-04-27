@@ -5,12 +5,14 @@ window.onload = function() {
   exitSetClassPage();
 
   function getSetClassPage() {
-    if (setClassContentBox.style.display == "none")
+    if (setClassContentBox.style.display == "none") {
       setClassContentBox.style.display = "block";
-    else exitSetClassPage();
+      document.body.style.opacity = 0.5;
+    } else exitSetClassPage();
   }
 
   function exitSetClassPage() {
+    document.body.style.opacity = 1;
     setClassContentBox.style.display = "none";
   }
 
