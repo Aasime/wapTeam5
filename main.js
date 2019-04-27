@@ -7,13 +7,19 @@ window.onload = function() {
   function getSetClassPage() {
     if (setClassContentBox.style.display == "none") {
       setClassContentBox.style.display = "block";
-      document.body.style.opacity = 0.5;
+      setOpacity("header", 0.5);
+      setOpacity("timeTable", 0.5);
     } else exitSetClassPage();
   }
 
   function exitSetClassPage() {
-    document.body.style.opacity = 1;
+    setOpacity("header", 1);
+    setOpacity("timeTable", 1);
     setClassContentBox.style.display = "none";
+  }
+
+  function setOpacity(id, value) {
+    document.getElementById(id).style.opacity = value;
   }
 
   document.getElementById("addClassButton").onclick = getSetClassPage;
