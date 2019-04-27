@@ -5,12 +5,26 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: rgb(21, 22, 25);
+  background-color: rgb(225,225,225);
+
 }
 
 #timeTable {
   /* background-image: url("./background-fire1.jpg"); */
 
-  width: 200px;
-  height: 300px;
+
+}
+
+#table{
+  
+  width:300px;
+  height:500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align : center;
+  margin-top:40px;
+
+}
+th, td{
+  border:1px solid black;
 }
