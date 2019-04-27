@@ -1,7 +1,7 @@
 window.onload = function() {
   var setClassContentBox = document.getElementById("setClassContentBox");
-  var exitButton = document.setClassContent;
-  console.log(exitButton);
+  var iframeContent = document.setClassContent.document;
+
   exitSetClassPage();
 
   function getSetClassPage() {
@@ -22,6 +22,32 @@ window.onload = function() {
     document.getElementById(id).style.opacity = value;
   }
 
+  function getValueById(id) {
+    return iframeContent.getElementById(id).value;
+  }
+
+  function addEntry() {
+    // Parse any JSON previously stored in allEntries
+    // console.log(localStorage.getItem("allEntries"));
+    var existingEntries = localStorage.getItem("allEntries");
+
+    if (existingEntries == "") existingEntries = [];
+    else existingEntries = JSON.parse(existingEntries);
+
+    var entry = {
+      subject: getValueById("subject"),
+      professor: getValueById("professor"),
+      dayOfWeek: getValueById("dayOfWeek"),
+      time1: getValueById("time1"),
+      time2: getValueById("time2")
+    };
+
+    existingEntries.push(entry);
+    localStorage.setItem("allEntries", JSON.stringify(existingEntries));
+    exitSetClassPage();
+  }
+
   document.getElementById("addClassButton").onclick = getSetClassPage;
-  exitButton.document.getElementById("exitButton").onclick = exitSetClassPage;
+  iframeContent.getElementById("exitButton").onclick = exitSetClassPage;
+  iframeContent.getElementById("button").onclick = addEntry;
 };
